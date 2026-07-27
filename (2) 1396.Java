@@ -1,4 +1,4 @@
-lass UndergroundSystem {
+class UndergroundSystem {
     Map<Integer, Pair<String, Integer>> checkInMap = new HashMap<>();  // Uid - {StationName, Time}
     Map<String, Pair<Double, Integer>> routeMap = new HashMap<>(); // RouteName - {TotalTime, Count}
 

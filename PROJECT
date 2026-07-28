@@ -1,0 +1,38 @@
+class ReminderService {
+
+    public String resolveDose(String medicineName) {
+
+        switch (medicineName.toLowerCase()) {
+            case "paracetamol":
+                return "Take 1 Tablet";
+
+            case "crocin":
+                return "Take 1 Tablet";
+
+            case "vitamin c":
+                return "Take 2 Tablets";
+
+            case "amoxicillin":
+                return "Take 1 Capsule";
+
+            case "insulin":
+                return "Take 10 Units";
+
+            default:
+                return "Dose information not available.";
+        }
+    }
+}  
+
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        ReminderService service = new ReminderService();
+
+        System.out.println(service.resolveDose("Paracetamol"));
+        System.out.println(service.resolveDose("Vitamin C"));
+        System.out.println(service.resolveDose("Insulin"));
+    }
+}
